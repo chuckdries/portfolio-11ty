@@ -1,0 +1,12 @@
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto; /* Preserve aspect ratio */
+}

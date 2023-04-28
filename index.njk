@@ -1,0 +1,13 @@
+---
+layout: layout.njk
+title: Ellie Dries
+eleventyImport:
+  collections: ["art"]
+---
+{%- for post in collections.art -%}
+  <li>
+    <a href="{{post.page.url}}">
+      {%image post.data.imageFile, post.data.title, "[350]"%}
+    </a>
+  </li>
+{%- endfor -%}
